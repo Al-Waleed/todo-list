@@ -4,9 +4,12 @@ body{
 }
 body{
     margin: 0;
+    background-color: #252243 ;
 }
 #main > div {
-    background-color: purple;
+    background-color: #9365DB;
+    border-radius: 25px;
+    padding: 16px;
 }
 #main{
     height: 95%;
@@ -25,16 +28,39 @@ body{
 #header{
     grid-area: header;
 }
+#header > h1{
+    text-align: center;
+}
+
 
 #tasks{
     grid-area: tasks;
+    display: flex;
+    flex-direction: column;
 }
 
 #projects{
     grid-area: projects;
+    display: flex;
+    flex-direction: column;
 }
 
 #content{
     grid-area: content;
+}
+
+button{
+    cursor: pointer;
+    background-color: #9365DB;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 8px;
+    margin: 12px;
+    color: #fff;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: #5C469C;
 }
 
