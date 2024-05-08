@@ -1,4 +1,4 @@
-export const tasks = {};
+export const tasks = {one:{title: 'test', description: 'one'}, two:{title: 'test2', description: 'two'}, three:{title: 'test3', description: 'three'} , four:{title: 'test4', description: 'four'}, five:{title: 'test5', description: 'five'}};
 
 
 export function getTaskInfo(){
@@ -13,10 +13,22 @@ export function getTaskInfo(){
 export function createTask() {
     const newTask = getTaskInfo();
     tasks[newTask.title] = newTask;
+    console.log(tasks);
 }
 
 export function displayTask() {
-    console.log(tasks)
+    const contentDiv = document.getElementById("content");
+    const allTasksDiv = document.createElement("div");
+    allTasksDiv.setAttribute("id", "all-tasks");
+    contentDiv.appendChild(allTasksDiv);
+
+    for (const task in tasks) {
+        const taskDiv = document.createElement("div");
+        taskDiv.innerHTML = tasks[task].title
+        taskDiv.classList.add("task")
+        allTasksDiv.appendChild(taskDiv)
+    }
+
 }
 
 
