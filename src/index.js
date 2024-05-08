@@ -1,3 +1,4 @@
+import "./style.css"
 import {createTask, displayTask, getTaskInfo, tasks } from "./tasks";
 import { createProject, displayAllProjects, displayProject, projects } from "./projects";
 
@@ -11,9 +12,3 @@ function addTaskToProject(){
 
     console.log(projects)
 }
-
-createTask();
-createTask();
-createProject();
-addTaskToProject(); 
-addTaskToProject(); 
