@@ -38,13 +38,13 @@ body{
 }
 
 
-#tasks{
+#tasks-tab{
     grid-area: tasks;
     display: flex;
     flex-direction: column;
 }
 
-#projects{
+#projects-tab{
     grid-area: projects;
     display: flex;
     flex-direction: column;
@@ -54,8 +54,8 @@ body{
     grid-area: content;
 }
 
-#projects > button,
-#tasks > button{
+#projects-tab > button,
+#tasks-tab > button{
     cursor: pointer;
     background-color: #9365DB;
     border: none;
@@ -66,8 +66,23 @@ body{
     font-size: 16px;
 }
 
-#projects > button:hover,
-#tasks > button:hover{
+#projects-tab > button:hover,
+#tasks-tab > button:hover{
     background-color: #5C469C;
 }
+
+ #all-tasks{
+    height: 100%;
+    display: flex;
+    flex-direction:column ;
+    gap: 12px;
+}
+
+#all-tasks > div{
+    background-color: #fff;
+    padding: 2px 4px;
+    height: 36px;
+    border-radius: 10px;
+}
+
 
