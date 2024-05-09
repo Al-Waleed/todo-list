@@ -12,3 +12,6 @@ function addTaskToProject(){
 
     console.log(projects)
 }
+
+const tasksButton = document.getElementById("tasks-button");
+tasksButton.addEventListener("click", () => displayTask())

@@ -18,6 +18,7 @@ export function createTask() {
 
 export function displayTask() {
     const contentDiv = document.getElementById("content");
+    contentDiv.innerHTML = "";
     const allTasksDiv = document.createElement("div");
     allTasksDiv.setAttribute("id", "all-tasks");
     contentDiv.appendChild(allTasksDiv);
