@@ -71,14 +71,14 @@ body{
     background-color: #5C469C;
 }
 
- #all-tasks{
+ #all{
     height: 100%;
     display: flex;
     flex-direction:column ;
     gap: 12px;
 }
 
-#all-tasks > div{
+#all > div{
     background-color: #D4ADFC;
     padding: 2px 4px;
     height: 36px;
