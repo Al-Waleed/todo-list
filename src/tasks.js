@@ -16,21 +16,23 @@ export function createTask() {
     console.log(tasks);
 }
 
-export function displayTask() {
-    const contentDiv = document.getElementById("content");
-    contentDiv.innerHTML = "";
-    const allTasksDiv = document.createElement("div");
-    allTasksDiv.setAttribute("id", "all-tasks");
-    contentDiv.appendChild(allTasksDiv);
+// export function displayTask() {
+//     const contentDiv = document.getElementById("content");
+//     contentDiv.innerHTML = "";
+//     const allTasksDiv = document.createElement("div");
+//     allTasksDiv.setAttribute("id", "all-tasks");
+//     contentDiv.appendChild(allTasksDiv);
 
-    for (const task in tasks) {
-        const taskDiv = document.createElement("div");
-        taskDiv.innerHTML = tasks[task].title
-        taskDiv.classList.add("task")
-        allTasksDiv.appendChild(taskDiv)
-    }
+//     for (const task in tasks) {
+//         const taskDiv = document.createElement("div");
+//         taskDiv.innerHTML = tasks[task].title
+//         taskDiv.classList.add("task")
+//         allTasksDiv.appendChild(taskDiv)
+//     }
 
-}
+// }
+
+
 
 
 

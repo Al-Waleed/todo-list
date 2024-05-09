@@ -1,4 +1,4 @@
-export const projects = {};
+export const projects = {proj1:{one:{title: 'test', description: 'one'}, two:{title: 'test2', description: 'two'}}, proj2:{one:{title: 'test', description: 'one'}, two:{title: 'test2', description: 'two'}}};
 
 export function createProject(){
     const newProject = prompt("Name of ur project");
@@ -7,9 +7,4 @@ export function createProject(){
 
 export function displayAllProjects(){
     console.log(projects);
-}
-
-export function displayProject(){
-    const project = prompt("choose a project");
-    console.log(projects[project]);
 }
