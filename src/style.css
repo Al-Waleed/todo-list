@@ -63,11 +63,31 @@ body{
     padding: 8px;
     margin: 12px;
     color: #fff;
+}
+
+.project{
+    cursor: pointer;
+    background-color: #9365DB;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 2px 6px;
+    margin: 2px;
+    color: #fff;
+    font-size: 16px;
+
+}
+
+#tasks-tab > button{
     font-size: 16px;
 }
 
+#projects-button{
+    font-size: 24px;
+}
+
 #projects-button:hover,
-#tasks-tab > button:hover{
+#tasks-tab > button:hover,
+.project:hover{
     background-color: #5C469C;
 }
 
@@ -104,4 +124,8 @@ body{
 
 #new-project:hover{
     background-color: #252243;
+}
+
+#projects{
+    
 }
