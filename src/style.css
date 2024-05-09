@@ -44,7 +44,8 @@ body{
     flex-direction: column;
 }
 
-#projects-tab{
+#projects-tab,
+#projects{
     grid-area: projects;
     display: flex;
     flex-direction: column;
@@ -124,8 +125,4 @@ body{
 
 #new-project:hover{
     background-color: #252243;
-}
-
-#projects{
-    
 }

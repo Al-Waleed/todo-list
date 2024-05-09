@@ -7,6 +7,15 @@ export function createProject(){
     update.click();// to update the content after adding a project
 }
 
-export function displayAllProjects(){
-    console.log(projects);
+
+export function displayProjectsTab(){
+    const container = document.getElementById("projects");
+    container.innerHTML = ""
+    
+    for (const project in projects){
+        const button = document.createElement("button");
+        button.classList.add("project");
+        button.innerText = project
+        container.appendChild(button);
+    }
 }

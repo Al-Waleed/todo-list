@@ -1,6 +1,6 @@
 import "./style.css"
 import {createTask, getTaskInfo, tasks } from "./tasks";
-import { createProject, displayAllProjects, displayProject, projects } from "./projects";
+import { createProject, displayProjectsTab, projects } from "./projects";
 import icon from "./add.png"
 
 
@@ -26,12 +26,18 @@ const projectsButton = document.createElement("projectsButton");
 projectsButton.setAttribute("id", "projects-button")
 projectsButton.innerText = "Projects"
 projectsHeader.appendChild(projectsButton)
-projectsButton.addEventListener("click", () => display(projects))
+projectsButton.addEventListener("click", () => {
+    display(projects);
+    displayProjectsTab();
+})
 
 const newProjectButton = document.createElement("button");
 newProjectButton.setAttribute("id", "new-project")
 projectsHeader.appendChild(newProjectButton);
-newProjectButton.addEventListener("click", () => createProject())
+newProjectButton.addEventListener("click", () => {
+    createProject();
+    displayProjectsTab();
+})
 
 const plusIcon = new Image();
 plusIcon.src = icon;
@@ -53,3 +59,5 @@ function display(obj) {
     }
 
 }
+
+displayProjectsTab()
