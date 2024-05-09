@@ -3,6 +3,8 @@ export const projects = {proj1:{one:{title: 'test', description: 'one'}, two:{ti
 export function createProject(){
     const newProject = prompt("Name of ur project");
     projects[newProject] = {};
+    const update = document.getElementById("projects-button")
+    update.click();// to update the content after adding a project
 }
 
 export function displayAllProjects(){

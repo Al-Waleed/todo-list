@@ -16,7 +16,7 @@ function addTaskToProject(){
 }
 
 const tasksButton = document.getElementById("tasks-button");
-tasksButton.addEventListener("click", () => display(tasks, "all-tasks", "task"))
+tasksButton.addEventListener("click", () => display(tasks))
 
 
 
@@ -31,6 +31,7 @@ projectsButton.addEventListener("click", () => display(projects))
 const newProjectButton = document.createElement("button");
 newProjectButton.setAttribute("id", "new-project")
 projectsHeader.appendChild(newProjectButton);
+newProjectButton.addEventListener("click", () => createProject())
 
 const plusIcon = new Image();
 plusIcon.src = icon;
