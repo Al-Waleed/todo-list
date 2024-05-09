@@ -79,10 +79,29 @@ body{
 }
 
 #all-tasks > div{
-    background-color: #fff;
+    background-color: #D4ADFC;
     padding: 2px 4px;
     height: 36px;
     border-radius: 10px;
 }
 
+#projects-header{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+#projects-header > button{
+    background-color: #9365DB;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+#projects-header > button:hover{
+    background-color: #252243;
+}
