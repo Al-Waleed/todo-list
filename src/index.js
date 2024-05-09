@@ -19,18 +19,22 @@ const tasksButton = document.getElementById("tasks-button");
 tasksButton.addEventListener("click", () => display(tasks, "all-tasks", "task"))
 
 
-const plusIcon = new Image();
-plusIcon.src = icon;
 
 const projectsHeader = document.getElementById("projects-header");
-const h2 = document.createElement("h2");
-h2.innerText = "Projects"
-const addProjectButton = document.createElement("button");
 
-projectsHeader.appendChild(h2)
-projectsHeader.appendChild(addProjectButton);
-addProjectButton.appendChild(plusIcon);
+const projectsButton = document.createElement("projectsButton");
+projectsButton.setAttribute("id", "projects-button")
+projectsButton.innerText = "Projects"
+projectsHeader.appendChild(projectsButton)
+projectsButton.addEventListener("click", () => display(projects, "all-tasks", "task"))
 
+const newProjectButton = document.createElement("button");
+newProjectButton.setAttribute("id", "new-project")
+projectsHeader.appendChild(newProjectButton);
+
+const plusIcon = new Image();
+plusIcon.src = icon;
+newProjectButton.appendChild(plusIcon);
 
 
 
@@ -43,7 +47,7 @@ function display(obj, elId, elClass) {
 
     for (const key in obj) {
         const div = document.createElement("div");
-        div.innerHTML = tasks[key].title
+        div.innerHTML = key
         div.classList.add(elClass)
         container.appendChild(div)
     }

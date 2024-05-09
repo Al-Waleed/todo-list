@@ -54,7 +54,7 @@ body{
     grid-area: content;
 }
 
-#projects-tab > button,
+#projects-button,
 #tasks-tab > button{
     cursor: pointer;
     background-color: #9365DB;
@@ -66,7 +66,7 @@ body{
     font-size: 16px;
 }
 
-#projects-tab > button:hover,
+#projects-button:hover,
 #tasks-tab > button:hover{
     background-color: #5C469C;
 }
@@ -92,7 +92,7 @@ body{
     align-items: center;
 }
 
-#projects-header > button{
+#new-project{
     background-color: #9365DB;
     border: none;
     cursor: pointer;
@@ -102,6 +102,6 @@ body{
     height: 30px;
 }
 
-#projects-header > button:hover{
+#new-project:hover{
     background-color: #252243;
 }
